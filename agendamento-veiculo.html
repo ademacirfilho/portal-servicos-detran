@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Serviços - Agendamento Veículos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-white font-['Inter'] antialiased">
+
+    <header class="bg-[#161e3d] text-white py-3 px-6 shadow-md">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] uppercase font-bold text-gray-300">Rio Grande</span>
+                    <span class="text-xs uppercase font-bold">Do Norte</span>
+                </div>
+                <div class="h-8 w-[1px] bg-gray-500/50"></div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                    <span class="font-bold text-lg tracking-tight">Detran<span class="font-light text-sm text-gray-300">.RN</span></span>
+                    </a>
+                </div>
+            </div>
+            <button class="bg-white text-[#161e3d] p-2 rounded-full hover:bg-gray-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-[1300px] mx-auto px-4 sm:px-6 py-10">
+        
+        <div class="bg-[#f1f5f9] rounded-xl shadow-sm overflow-hidden border border-gray-100">
+            
+            <div class="bg-[#161e3d] text-white px-6 py-3 flex flex-wrap gap-8 text-sm">
+                <a href="agendamento-habilitacao.html"><button class="text-gray-300 hover:text-white transition-colors">Habilitação</button></a>
+                <a href="agendamento-medico.html"><button class="text-gray-300 hover:text-white transition-colors">Médico</button></a>
+                <a href="agendamento-veiculo.html"><button class="font-bold border-b-2 border-white pb-0.5">Veículo</button></a>
+                <a href="minha-agenda.html"><button class="text-gray-300 hover:text-white transition-colors">Minha Agenda</button></a>
+            </div>
+
+            <div class="p-8 md:p-10 space-y-8">
+                
+                <section>
+                    <h2 class="text-[#161e3d] text-2xl font-bold mb-4">Dados Pessoa</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">Nome</label>
+                            <input type="text" placeholder="Nome completo" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 placeholder-gray-400">
+                        </div>
+                        
+                        <div class="flex flex-col gap-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">CPF</label>
+                            <input type="text" placeholder="CPF" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 placeholder-gray-400">
+                        </div>
+                    </div>
+                </section>
+
+                <div class="h-px w-full bg-gray-300/50"></div>
+
+                <section>
+                    <h2 class="text-[#161e3d] text-2xl font-bold mb-4">Dados do Agendamento</h2>
+                    
+                    <div class="mb-8">
+                        <label class="text-gray-700 font-medium text-sm ml-1 mb-2 block">Categoria</label>
+                        <div class="flex flex-wrap gap-3">
+                            <button class="bg-[#5b7ce3] hover:bg-[#4a6bd2] text-white font-medium py-2 px-6 rounded-lg shadow-sm text-sm transition-colors">Liberação de Veículos</button>
+                            <button class="bg-[#5b7ce3] hover:bg-[#4a6bd2] text-white font-medium py-2 px-6 rounded-lg shadow-sm text-sm transition-colors">Abertura de Processos</button>
+                            <button class="bg-[#5b7ce3] hover:bg-[#4a6bd2] text-white font-medium py-2 px-6 rounded-lg shadow-sm text-sm transition-colors">Atendimento Despachante</button>
+                            <button class="bg-[#5b7ce3] hover:bg-[#4a6bd2] text-white font-medium py-2 px-6 rounded-lg shadow-sm text-sm transition-colors">Vistoria</button>
+                            <button class="bg-[#5b7ce3] hover:bg-[#4a6bd2] text-white font-medium py-2 px-6 rounded-lg shadow-sm text-sm transition-colors">Outros Serviços</button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        
+                        <div class="flex flex-col gap-1 w-full md:w-1/3 pr-2">
+                            <label class="text-gray-700 font-medium text-sm ml-1 whitespace-nowrap overflow-hidden text-ellipsis">Placa (Veículo já emplacado) ou Chassi (Veículo não emplacado)</label>
+                            <input type="text" placeholder="Placa ou Chassi" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 placeholder-gray-400">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-gray-700 font-medium text-sm ml-1">Serviço</label>
+                                <div class="relative">
+                                    <select class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 appearance-none cursor-pointer">
+                                        <option>Selecione um serviço</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-gray-700 font-medium text-sm ml-1">Local de Atendimento</label>
+                                <div class="relative">
+                                    <select class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 appearance-none cursor-pointer">
+                                        <option>Selecione um Local de Atendimento</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <svg class="fill-current h-4 w-4" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-gray-700 font-medium text-sm ml-1">Data</label>
+                                <input type="date" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 placeholder-gray-400 uppercase">
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="flex justify-end pt-4">
+                    <button class="bg-[#161e3d] hover:bg-[#232f5e] text-white font-medium py-3 px-8 rounded-lg shadow-md transition-colors text-lg">
+                        Consultar Horários
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#161e3d] text-gray-300 py-5 text-center text-xs mt-auto w-full">
+        <p>Departamento Estadual de Trânsito do Rio Grande do Norte © 2025</p>
+    </footer>
+
+</body>
+</html>

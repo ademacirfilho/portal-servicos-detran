@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Serviços - Cadastro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-white font-['Inter'] antialiased">
+
+    <header class="bg-[#161e3d] text-white py-3 px-6 shadow-md">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] uppercase font-bold text-gray-300">Rio Grande</span>
+                    <span class="text-xs uppercase font-bold">Do Norte</span>
+                </div>
+                <div class="h-8 w-[1px] bg-gray-500/50"></div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <span class="font-bold text-lg tracking-tight">Detran<span class="font-light text-sm text-gray-300">.RN</span></span>
+                </div>
+            </div>
+            <a href="#" class="text-sm font-medium hover:text-gray-200 transition-colors hidden md:block">
+                Já possui conta? Entrar
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center w-full px-4 py-12 bg-gray-50">
+        
+        <div class="w-full max-w-3xl bg-[#f1f5f9] rounded-xl shadow-lg border border-gray-100 p-8 md:p-10">
+            
+            <div class="mb-8 border-b border-gray-300/50 pb-4">
+                <h1 class="text-[#161e3d] text-2xl font-bold mb-2">Criar nova conta</h1>
+                <p class="text-gray-500 text-sm">Preencha os dados abaixo para ter acesso aos serviços digitais.</p>
+            </div>
+
+            <form class="space-y-6">
+                
+                <div>
+                    <h3 class="text-[#161e3d] font-semibold text-lg mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        Dados Pessoais
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="md:col-span-2 space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">Nome Completo</label>
+                            <input type="text" placeholder="Digite seu nome completo" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">CPF</label>
+                            <input type="text" placeholder="000.000.000-00" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">Data de Nascimento</label>
+                            <input type="date" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400 text-gray-500 uppercase">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <h3 class="text-[#161e3d] font-semibold text-lg mb-4 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        Contato e Senha
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">E-mail</label>
+                            <input type="email" placeholder="seu@email.com" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">Senha</label>
+                            <input type="password" placeholder="Mínimo 6 caracteres" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-gray-700 font-medium text-sm ml-1">Confirmar Senha</label>
+                            <input type="password" placeholder="Repita a senha" class="w-full bg-transparent border border-gray-400 rounded-lg px-4 py-2.5 text-gray-700 focus:outline-none focus:border-blue-600 focus:bg-white transition-colors placeholder-gray-400">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-start pt-2">
+                    <div class="flex items-center h-5">
+                        <input id="terms" type="checkbox" class="w-4 h-4 border border-gray-400 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300">
+                    </div>
+                    <label for="terms" class="ml-2 text-sm font-medium text-gray-700">
+                        Eu concordo com os <a href="#" class="text-blue-700 hover:underline">Termos de Uso</a> e <a href="#" class="text-blue-700 hover:underline">Política de Privacidade</a> do Detran RN.
+                    </label>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-4 pt-4">
+                    <button type="button" class="flex-1 bg-[#161e3d] hover:bg-[#232f5e] text-white font-bold py-3 px-6 rounded-lg shadow-md transition-all active:scale-[0.98]">
+                        Criar Conta
+                    </button>
+                    <a href="login.html"><button type="button" class="md:w-auto bg-transparent border border-[#161e3d] text-[#161e3d] hover:bg-gray-200 font-semibold py-3 px-6 rounded-lg transition-colors">
+                        Cancelar
+                    </button></a>
+                </div>
+
+            </form>
+
+            <div class="mt-8 text-center text-sm text-gray-600 md:hidden">
+                Já tem conta? 
+                <a href="login.html" class="text-blue-700 font-bold hover:underline">Faça login</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#161e3d] text-gray-300 py-5 text-center text-xs mt-auto w-full">
+        <p>Departamento Estadual de Trânsito do Rio Grande do Norte © 2025</p>
+    </footer>
+
+</body>
+</html>
