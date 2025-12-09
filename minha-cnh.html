@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran RN - Minha CNH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-white font-['Inter'] antialiased">
+
+    <header class="bg-[#161e3d] text-white py-3 px-6 shadow-md">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] uppercase font-bold text-gray-300">Rio Grande</span>
+                    <span class="text-xs uppercase font-bold">Do Norte</span>
+                </div>
+                <div class="h-8 w-[1px] bg-gray-500/50"></div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                    <span class="font-bold text-lg tracking-tight">Detran<span class="font-light text-sm text-gray-300">.RN</span></span>
+                    </a>
+                </div>
+            </div>
+            <button class="bg-white text-[#161e3d] p-2 rounded-full hover:bg-gray-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-[1300px] mx-auto px-4 sm:px-6 py-10">
+        
+        <div class="bg-[#f1f5f9] rounded-xl shadow-sm overflow-hidden border border-gray-100 min-h-[600px]">
+            
+            <div class="bg-[#161e3d] text-white px-6 py-4 flex gap-8 text-sm">
+                <a href="minha-cnh.html"><button class="font-bold text-gray-100 border-b-2 border-gray-400 pb-0.5">Dados Pessoa</button></a>
+                <a href="minha-cnh2.html"><button class="text-gray-400 hover:text-white transition-colors">Dados Habilitação</button></a>
+            </div>
+
+            <div class="p-8 md:p-10">
+                
+                <h2 class="text-[#161e3d] text-2xl font-bold mb-8">Dados Pessoa</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <div class="flex flex-col gap-2">
+                        <label class="text-gray-700 font-medium text-sm ml-1">Nome</label>
+                        <div class="w-full bg-[#e2e8f0] rounded-lg px-4 py-3 text-gray-600 font-medium text-sm">
+                            Jean Lucas Galdino
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col gap-2">
+                        <label class="text-gray-700 font-medium text-sm ml-1">CPF</label>
+                        <div class="w-full bg-[#e2e8f0] rounded-lg px-4 py-3 text-gray-600 font-medium text-sm">
+                            177.174.317-42
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-gray-700 font-medium text-sm ml-1">Email</label>
+                        <div class="w-full bg-[#e2e8f0] rounded-lg px-4 py-3 text-gray-600 font-medium text-sm">
+                            franciscoguilherme@gmail.com
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2 md:col-span-2">
+                        <label class="text-gray-700 font-medium text-sm ml-1">Endereço</label>
+                        <div class="w-full bg-[#e2e8f0] rounded-lg px-4 py-3 text-gray-600 font-medium text-sm">
+                            Rua Mariano Procopio, N37
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <label class="text-gray-700 font-medium text-sm ml-1">Telefone</label>
+                        <div class="w-full bg-[#e2e8f0] rounded-lg px-4 py-3 text-gray-600 font-medium text-sm">
+                            (21) 9 7584 - 3257
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#161e3d] text-gray-300 py-5 text-center text-xs mt-auto w-full">
+        <p>Departamento Estadual de Trânsito do Rio Grande do Norte © 2025</p>
+    </footer>
+
+</body>
+</html>

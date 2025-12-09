@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran RN - Meus Veículos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-white font-['Inter'] antialiased">
+
+    <header class="bg-[#161e3d] text-white py-3 px-6 shadow-md">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] uppercase font-bold text-gray-300">Rio Grande</span>
+                    <span class="text-xs uppercase font-bold">Do Norte</span>
+                </div>
+                <div class="h-8 w-[1px] bg-gray-500/50"></div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                    <span class="font-bold text-lg tracking-tight">Detran<span class="font-light text-sm text-gray-300">.RN</span></span>
+                    </a>
+                </div>
+            </div>
+            <button class="bg-white text-[#161e3d] p-2 rounded-full hover:bg-gray-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-[1300px] mx-auto px-4 sm:px-6 py-10">
+        
+        <h1 class="text-[#161e3d] text-3xl font-medium text-center mb-10">Meus Veiculos</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-[#f1f5f9] rounded-xl p-6 shadow-sm flex flex-col items-center">
+                <h2 class="text-xl text-gray-800 font-normal mb-6">Ferrari SF-25</h2>
+                
+                <div class="w-full h-40 bg-gray-300 rounded-lg overflow-hidden mb-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Red_2019_Ferrari_SF90_Stradale.jpg/1200px-Red_2019_Ferrari_SF90_Stradale.jpg" alt="Ferrari" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-full space-y-2 text-gray-600 font-light text-sm mb-8">
+                    <p class="text-base"><span class="font-normal">Ano/Modelo:</span> 2025/2025</p>
+                    <p class="text-base"><span class="font-normal">Licenciamento:</span> 2025</p>
+                    <p class="text-base"><span class="font-normal">Cidade:</span> São Paulo do Potengi</p>
+                    <p class="text-base"><span class="font-normal">Placa:</span> OOO-1011</p>
+                </div>
+
+                <div class="w-full flex gap-3 mt-auto">
+                    <button class="flex-1 bg-[#2ecc71] text-white py-2.5 rounded-lg text-sm font-medium hover:bg-green-600 transition shadow-sm">
+                        IPVA Pago
+                    </button>
+                    <button class="flex-1 bg-white border border-blue-500 text-blue-600 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-50 transition shadow-sm">
+                        Emitir CRLV-e
+                    </button>
+                </div>
+
+                <a href="#" class="text-xs text-gray-400 mt-4 hover:text-gray-600 transition">Ver detalhes</a>
+            </div>
+
+            <div class="bg-[#f1f5f9] rounded-xl p-6 shadow-sm flex flex-col items-center">
+                <h2 class="text-xl text-gray-800 font-normal mb-6">Chevrolet Coupe</h2>
+                
+                <div class="w-full h-40 bg-gray-300 rounded-lg overflow-hidden mb-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/1940_Chevrolet_Special_DeLuxe_Business_Coupe_Front.jpg/1200px-1940_Chevrolet_Special_DeLuxe_Business_Coupe_Front.jpg" alt="Chevrolet Coupe" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-full space-y-2 text-gray-600 font-light text-sm mb-8">
+                    <p class="text-base"><span class="font-normal">Ano/Modelo:</span> 1940/1940</p>
+                    <p class="text-base"><span class="font-normal">Licenciamento:</span> 1940</p>
+                    <p class="text-base"><span class="font-normal">Cidade:</span> São Paulo do Potengi</p>
+                    <p class="text-base"><span class="font-normal">Placa:</span> 101-1000</p>
+                </div>
+
+                <div class="w-full flex gap-3 mt-auto">
+                    <button class="flex-1 bg-[#3b66f5] text-white py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 transition shadow-sm">
+                        Pagar IPVA
+                    </button>
+                    <button class="flex-1 bg-white border border-gray-400 text-gray-500 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-50 transition shadow-sm">
+                        Pendente
+                    </button>
+                </div>
+
+                <a href="#" class="text-xs text-gray-400 mt-4 hover:text-gray-600 transition">Ver detalhes</a>
+            </div>
+
+            <div class="bg-[#f1f5f9] rounded-xl p-6 shadow-sm flex flex-col items-center">
+                <h2 class="text-xl text-gray-800 font-normal mb-6">Ford Falcon BA XR8</h2>
+                
+                <div class="w-full h-40 bg-gray-300 rounded-lg overflow-hidden mb-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/2002-2005_Ford_Falcon_%28BA%29_XR8_sedan_%282010-10-02%29_01.jpg" alt="Ford Falcon" class="w-full h-full object-cover">
+                </div>
+
+                <div class="w-full space-y-2 text-gray-600 font-light text-sm mb-8">
+                    <p class="text-base"><span class="font-normal">Ano/Modelo:</span> 2002-2002</p>
+                    <p class="text-base"><span class="font-normal">Licenciamento:</span> 2002</p>
+                    <p class="text-base"><span class="font-normal">Cidade:</span> São Paulo do Potengi</p>
+                    <p class="text-base"><span class="font-normal">Placa:</span> 876-1234</p>
+                </div>
+
+                <div class="w-full mt-auto">
+                    <button class="w-full bg-[#ef4444] text-white py-2.5 rounded-lg text-sm font-medium hover:bg-red-600 transition shadow-sm">
+                        Regularizar Pendências
+                    </button>
+                </div>
+
+                <a href="#" class="text-xs text-gray-400 mt-4 hover:text-gray-600 transition">Ver detalhes</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-[#161e3d] text-gray-300 py-5 text-center text-xs mt-auto w-full">
+        <p>Departamento Estadual de Trânsito do Rio Grande do Norte © 2025</p>
+    </footer>
+
+</body>
+</html>

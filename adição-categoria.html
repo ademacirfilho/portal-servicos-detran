@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran RN - Adição de Categoria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-white font-['Inter'] antialiased">
+
+    <header class="bg-[#161e3d] text-white py-3 px-6 shadow-md">
+        <div class="max-w-[1300px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col leading-none">
+                    <span class="text-[10px] uppercase font-bold text-gray-300">Rio Grande</span>
+                    <span class="text-xs uppercase font-bold">Do Norte</span>
+                </div>
+                <div class="h-8 w-[1px] bg-gray-500/50"></div>
+                <div class="flex items-center gap-2">
+                    <a href="index.html">
+                    <span class="font-bold text-lg tracking-tight">Detran<span class="font-light text-sm text-gray-300">.RN</span></span>
+                    </a>
+                </div>
+            </div>
+            <button class="bg-white text-[#161e3d] p-2 rounded-full hover:bg-gray-200 transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="bg-[#28a745] w-full py-4 px-6 shadow-sm">
+        <div class="max-w-[1300px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <h1 class="text-white text-xl font-bold">Adição de Categoria</h1>
+            <button class="bg-white text-gray-700 hover:bg-gray-100 font-medium py-1.5 px-4 rounded shadow-sm text-sm transition-colors">
+                Iniciar processo de agendamento
+            </button>
+        </div>
+    </div>
+
+    <main class="flex-grow w-full max-w-[1300px] mx-auto px-6 py-8 text-sm text-gray-800">
+        
+        <div class="space-y-6">
+
+            <section>
+                <h2 class="font-bold text-base text-gray-900 mb-2">Requisitos Necessários:</h2>
+                <p class="text-gray-700">Possuir Carteira Nacional de Habilitação.</p>
+            </section>
+
+            <section>
+                <h2 class="font-bold text-base text-gray-900 mb-2">Documentos Obrigatórios:</h2>
+                <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                    <li>Original da CNH, em perfeito estado;</li>
+                    <li>Original do <span class="font-bold">COMPROVANTE DE RESIDÊNCIA</span> (contas, faturas ou boletos expedidos nos últimos 90 dias) em nome do requerente, pais ou cônjuge (apresentando a certidão de casamento original ou de união estável).</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="font-bold text-base text-gray-900 mb-2">Procedimentos:</h2>
+                <div class="space-y-2 text-gray-700 leading-relaxed">
+                    <p>1º - Realizar agendamento no próprio <a href="#" class="text-blue-600 hover:underline">portal de serviços</a> escolhendo a opção habilitação > atendimentos CNH (atendimento em unidade do DETRAN).</p>
+                    <p>2º - Apresentar documentação necessária e conferir as informações do formulário RENACH;</p>
+                    <p>3º - Será realizada a digitalização e captura da foto;</p>
+                    <p>4º - Dirigir-se à agência bancária para efetuar o pagamento das taxas ou gerar boleto ou PIX antes do seu atendimento diretamente pelo site do DETRAN na opção CNH na página inicial do site DETRAN/RN.</p>
+                    <p>5º - Realizar exames clínico-médico e de aptidão psicológica(caso exerça Atividade Remunerada - Motoristas profissionais)</p>
+                    <p>6º - Dirigir-se ao CFC credenciado pelo DETRAN/RN para fazer o curso de formação prática de 15h/aula;</p>
+                    <p>7º - Informar-se no CFC quanto a data de realização do exame prático no DETRAN/RN;</p>
+                    <p>8º - Dirigir-se a pista de volante no DETRAN/RN na data marcada pelo CFC para a realização da prova prática;</p>
+                </div>
+            </section>
+
+            <section class="pt-2">
+                <h2 class="font-bold text-base text-gray-900 mb-4">Taxas do Serviço:</h2>
+
+                <div class="mb-8">
+                    <p class="font-bold text-gray-900 mb-2 text-xs">1º Caso</p>
+                    <div class="border border-gray-200 rounded-sm overflow-hidden">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-white border-b border-gray-200">
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-center w-2/3">ADIÇÃO DE CATEGORIA - CATEGORIA "A" (SEM ATIVIDADE REMUNERADA)</th>
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-right">CUSTO GERAL COM CNH ENVIADA VIA CORREIOS</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr><td class="py-2 px-4 text-gray-600">Adição de Categoria na Carteira Nacional de Habilitação</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Licença para Aprendizagem de Direção Veicular – LADV (por categoria)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 27,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Utilização de viatura do DETRAN/RN para testes para categoria "A"</td><td class="py-2 px-4 text-gray-600 text-right">R$ 80,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Postagem de CNH com AR (VIA CORREIOS)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 12,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Exame de Aptidão Física e Mental</td><td class="py-2 px-4 text-gray-600 text-right">R$ 75,00</td></tr>
+                                <tr class="bg-white"><td class="py-2 px-4 font-bold text-gray-800">TOTAL GERAL DO SERVIÇO</td><td class="py-2 px-4 font-bold text-gray-800 text-right">R$ 284,00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <p class="font-bold text-gray-900 mb-2 text-xs">2º Caso</p>
+                    <div class="border border-gray-200 rounded-sm overflow-hidden">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-white border-b border-gray-200">
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-center w-2/3">ADIÇÃO DE CATEGORIA - CATEGORIA "A" (COM ATIVIDADE REMUNERADA)</th>
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-right">CUSTO GERAL COM CNH ENVIADA VIA CORREIOS</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr><td class="py-2 px-4 text-gray-600">Adição de Categoria na Carteira Nacional de Habilitação</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Licença para Aprendizagem de Direção Veicular – LADV (por categoria)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 27,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Utilização de viatura do DETRAN/RN para testes para categoria "A"</td><td class="py-2 px-4 text-gray-600 text-right">R$ 80,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Postagem de CNH com AR (VIA CORREIOS)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 12,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Exame de Aptidão Física e Mental</td><td class="py-2 px-4 text-gray-600 text-right">R$ 75,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Avaliação Psicológica</td><td class="py-2 px-4 text-gray-600 text-right">R$ 85,00</td></tr>
+                                <tr class="bg-white"><td class="py-2 px-4 font-bold text-gray-800">TOTAL GERAL DO SERVIÇO</td><td class="py-2 px-4 font-bold text-gray-800 text-right">R$ 369,00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <p class="font-bold text-gray-900 mb-2 text-xs">3º Caso</p>
+                    <div class="border border-gray-200 rounded-sm overflow-hidden">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-white border-b border-gray-200">
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-center w-2/3">ADIÇÃO DE CATEGORIA "B" SEM ATIVIDADE REMUNERADA</th>
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-right">CUSTO GERAL COM CNH ENVIADA VIA CORREIOS</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr><td class="py-2 px-4 text-gray-600">Adição de Categoria na Carteira Nacional de Habilitação</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Licença para Aprendizagem de Direção Veicular – LADV (por categoria)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 27,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Utilização de viatura do DETRAN/RN para testes para categoria "B"</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Postagem de CNH com AR (VIA CORREIOS)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 12,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Exame de Aptidão Física e Mental</td><td class="py-2 px-4 text-gray-600 text-right">R$ 75,00</td></tr>
+                                <tr class="bg-white"><td class="py-2 px-4 font-bold text-gray-800">TOTAL GERAL DO SERVIÇO</td><td class="py-2 px-4 font-bold text-gray-800 text-right">R$ 294,00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <p class="font-bold text-gray-900 mb-2 text-xs">4º Caso</p>
+                    <div class="border border-gray-200 rounded-sm overflow-hidden">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-white border-b border-gray-200">
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-center w-2/3">ADIÇÃO DE CATEGORIA "B" - COM ATIVIDADE REMUNERADA</th>
+                                    <th class="py-3 px-4 font-bold text-xs uppercase text-gray-800 text-right">CUSTO GERAL COM CNH ENVIADA VIA CORREIOS</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200 bg-white">
+                                <tr><td class="py-2 px-4 text-gray-600">Adição de Categoria na Carteira Nacional de Habilitação</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Licença para Aprendizagem de Direção Veicular – LADV (por categoria)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 27,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Utilização de viatura do DETRAN/RN para testes para categoria "B"</td><td class="py-2 px-4 text-gray-600 text-right">R$ 90,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Postagem de CNH com AR (VIA CORREIOS)</td><td class="py-2 px-4 text-gray-600 text-right">R$ 12,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Exame de Aptidão Física e Mental</td><td class="py-2 px-4 text-gray-600 text-right">R$ 75,00</td></tr>
+                                <tr><td class="py-2 px-4 text-gray-600">Avaliação Psicológica</td><td class="py-2 px-4 text-gray-600 text-right">R$ 85,00</td></tr>
+                                <tr class="bg-white"><td class="py-2 px-4 font-bold text-gray-800">TOTAL GERAL DO SERVIÇO</td><td class="py-2 px-4 font-bold text-gray-800 text-right">R$ 379,00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-[#161e3d] text-gray-300 py-5 text-center text-xs mt-auto w-full">
+        <p>Departamento Estadual de Trânsito do Rio Grande do Norte © 2025</p>
+    </footer>
+
+</body>
+</html>
